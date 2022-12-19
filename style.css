@@ -1,0 +1,741 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 20px 0;
+}
+header {
+  position: relative;
+  display: block;
+  background: rgb(0, 0, 0);
+}
+nav {
+  position: sticky;
+  margin: 0 70px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .navbar-brand {
+  padding: 5px 0;
+  margin-left: 5rem;
+}
+.navbar-nav li:nth-last-child(1) {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.logo {
+  width: 24%;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+.bars {
+  display: flex;
+}
+.fa-bars {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+}
+@media (min-width: 1200px) {
+  .bars {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  /* 會吃這裡的樣式 */
+  .menu {
+    display: none;
+  }
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+.menu li {
+  margin-right: 12px;
+  list-style: none;
+}
+.menu a {
+  font-size: 24px;
+  text-decoration: none;
+  vertical-align: baseline;
+  color: #fff;
+}
+.menu button {
+  background: #ff5003;
+  color: #fff !important;
+  font-family: "HappyHalloween";
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 8px 16px;
+}
+section {
+  display: block;
+}
+.banner-inside {
+  background: url("./image/bg-img.jpeg");
+  background-size: cover;
+  width: 100%;
+  min-height: 896px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: -1000;
+}
+.bat-container {
+  width: 133px;
+  height: 66px;
+  position: absolute;
+  top: -460px;
+  right: 787px;
+  bottom: 0;
+  margin: auto;
+}
+.bat {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.small-bats {
+  width: 83.333333px;
+  height: 36.666667px;
+  right: 700px;
+}
+.bats-div-img {
+  position: absolute;
+  left: 30%;
+  top: 20%;
+  width: 50%;
+  display: inline-block;
+}
+.container {
+  display: flex;
+  padding: 200px 0px 0px 0px;
+}
+.banner-left {
+  width: 50%;
+}
+@media (max-width: 760px) {
+  .banner-left {
+    display: none;
+  }
+  .banner-text1 {
+    margin: auto;
+  }
+}
+.banner-text1 {
+  width: 50%;
+}
+.banner-text1 h5 {
+  font-family: "Ghostphobia";
+  color: #fff;
+  margin-bottom: 0;
+  font-size: 25px;
+}
+.banner-text1 h1 {
+  font-family: "Ghostphobia";
+  color: #fff;
+  font-size: 58px;
+}
+.banner-text1 h1 {
+  margin-top: 0;
+}
+.banner-text1 button {
+  background: #ff5003;
+  color: #fff !important;
+  font-family: "HappyHalloween";
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 8px 24px;
+}
+.features__section__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  clear: both;
+}
+.features__item {
+  margin: 10px 25px 40px 0px;
+  width: 336px;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+}
+
+.features__item img {
+  width: 25%;
+}
+
+.features__item__info {
+  display: flex;
+  font-size: 14px;
+  padding: 10px;
+}
+
+.features__item__info h4 {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-sec-div {
+  display: flex;
+  width: 100%;
+  background: #000;
+  background-position: top left;
+  text-align: center;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+/*  max-width 尺寸以下(包含) */
+@media (max-width: 768px) {
+  /* 會吃這裡的樣式 */
+  .about-container {
+    flex-direction: column;
+  }
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem;
+}
+.about-left {
+  width: 50%;
+}
+.about-left img {
+  width: 630px;
+}
+.about-sec-div h6 {
+  color: #ff5003;
+  font-family: "HappyHalloween";
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.about-sec-div h2 {
+  color: #fff;
+  font-family: "Ghostphobia";
+  font-size: 45px;
+  margin-top: 0;
+}
+.about-sec-div p {
+  color: #fff;
+  text-align: left;
+}
+.about-p2 {
+  margin: 32px 0;
+}
+.about-btn {
+  background: #ff5003;
+  color: #fff !important;
+  font-family: "HappyHalloween";
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 8px 24px;
+}
+.event-div {
+  display: flex;
+  width: 100%;
+  background: #000 url(./image/bg-img6.png) no-repeat;
+  background-position: top left;
+  text-align: center;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+.event-div button {
+  background: #ff5003;
+  color: #fff !important;
+  font-family: "HappyHalloween";
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 8px 24px;
+  margin: 3rem;
+}
+.event-sub {
+  color: #ff5003;
+  font-family: "HappyHalloween";
+  margin-bottom: 0;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.event-main {
+  color: #fff;
+  font-family: "Ghostphobia";
+  font-size: 45px;
+  margin-top: 0;
+}
+.event__section__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  clear: both;
+}
+.event__item {
+  /* margin: 200px 25px 40px 0px; */
+  width: 336px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 20px 120px;
+}
+
+.event__item img {
+  width: 400px;
+  height: 250px;
+  margin-bottom: 15px;
+}
+
+.event__item__info {
+  display: flex;
+  font-size: 14px;
+  width: 400px;
+  text-align: left;
+}
+.event-list {
+  height: 24px;
+  display: inline-block;
+}
+.event-list li {
+  list-style: none;
+  font-size: 16px;
+  padding-left: 0;
+}
+.event__item__info h4 {
+  font-size: 26px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+.counting-bg-div {
+  background: #000 url(./image/bg-img2.png) fixed no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: grid;
+  min-height: 250px;
+  background-position: bottom;
+  align-content: center;
+}
+.count__section__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  clear: both;
+}
+.count__item {
+  width: 336px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+}
+
+.count__item__info {
+  display: flex;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+}
+
+.count__item__info h2 {
+  color: #fff;
+  font-family: "HappyHalloween";
+  font-size: 65px;
+  text-shadow: #000 1px 2px 8px;
+}
+.count__item__info p {
+  color: #fff;
+  font-family: "HappyHalloween";
+  font-size: 20px;
+}
+
+.team-div {
+  display: flex;
+  background: #000 url(./image/bg-img7.jpeg) no-repeat;
+  background-position: top left;
+  text-align: center;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  padding: 80px;
+}
+.team-div button {
+  background: #ff5003;
+  color: #fff !important;
+  font-family: "HappyHalloween";
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 8px 24px;
+  margin: 3rem;
+}
+.team-sub {
+  color: #ff5003;
+  font-family: "HappyHalloween";
+  margin-bottom: 0;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.team-main {
+  color: #fff;
+  font-family: "Ghostphobia";
+  font-size: 45px;
+  margin-top: 0;
+}
+.team__section__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  clear: both;
+  margin-top: 3rem;
+}
+.team__item {
+  /* width: 336px; */
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  /* padding: 20px 120px; */
+}
+.team__item figure {
+  width: 150px;
+  height: 150px;
+  display: grid;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: auto;
+}
+.team__item img {
+  width: 150px;
+  margin-right: 10px;
+}
+
+.team__item__info {
+  display: flex;
+  font-size: 14px;
+  width: 300px;
+  text-align: left;
+  flex-direction: column;
+  align-items: center;
+}
+.team__item__info h5 {
+  color: #fff;
+  font-family: "HappyHalloween";
+  font-size: 26px;
+  margin-top: 10px;
+}
+.team__item__info span {
+  color: #ff5003;
+  font-family: "HappyHalloween";
+  font-size: 18px;
+}
+.gallery-div {
+  display: flex;
+  width: 100%;
+  background: #000 url(./image/bg-img6.jpeg) no-repeat;
+  background-position: top left;
+  text-align: center;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+.gallery-container {
+  margin: 4rem 0;
+}
+.list-work {
+  display: inline-block;
+  height: 45px;
+  margin-bottom: 1rem;
+}
+.list-work ul li {
+  padding: 10px 25px;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+  display: inline;
+  background: #f3f3f3;
+  border-radius: 30px;
+  margin: 0 8px;
+  font-family: "HappyHalloween";
+  list-style: none;
+}
+.list-work ul .active {
+  background: #ff5003;
+  color: #fff;
+}
+.gallery__section__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  clear: both;
+  margin-top: 2rem;
+}
+.gallery__item {
+  padding: 0 15px;
+  margin: 1rem;
+}
+.gallery__item figure {
+  width: 330px;
+  height: 250px;
+  display: grid;
+  overflow: hidden;
+  border-radius: 8px;
+  margin: auto;
+}
+.gallery__item img {
+  width: 100%;
+  height: 100%;
+}
+.plans-div {
+  display: flex;
+  width: 100%;
+  background: #000 url(./image/bg-img3.jpeg) fixed no-repeat;
+  background-position: top left;
+  text-align: center;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+.plans-container {
+  margin: 2rem;
+}
+.comon-plans {
+  display: inline-block;
+  width: 400px;
+  height: 440px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 440px;
+  margin: 3rem 1rem;
+}
+.comon-plans::before {
+  width: 100%;
+  height: 500px;
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  backdrop-filter: blur(20px);
+  border-radius: 8px;
+}
+.content-in {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.content-in ul li {
+  color: #fff;
+  line-height: 25px;
+  margin-bottom: 10px;
+  border-bottom: dotted 1px #87878757;
+  padding-bottom: 5px;
+  list-style: none;
+}
+.content-in h4 {
+  background: #ff5003;
+  text-align: center;
+  margin-top: 0;
+  padding: 12px 0;
+  font-family: "Ghostphobia";
+  color: #fff;
+  font-size: 35px;
+}
+.content-in h2 {
+  color: #fff;
+  font-family: "HappyHalloween";
+  font-size: 70px;
+}
+.content-in h2 sup {
+  font-size: 30px;
+}
+.content-in ul {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+.comon-btn {
+  background: #ff5003;
+  color: #fff !important;
+  font-family: "HappyHalloween";
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 8px 24px;
+  text-decoration: none;
+}
+.testimonial-div {
+  display: inline-block;
+  width: 100%;
+  background: #000 url(./image/bg-img4.png) no-repeat;
+  background-position: 0 50px;
+}
+.test-container {
+  text-align: center;
+  flex-direction: row;
+  align-content: center;
+}
+.items-teti {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  border: solid 4px #333333;
+  background: #000;
+  padding: 20px;
+}
+.items-teti h5 {
+  font-family: "HappyHalloween";
+  line-height: 32px;
+  font-size: 22px;
+  text-align: left;
+}
+.items-teti h6 {
+  color: #ff5003;
+  text-align: center;
+}
+.items-teti p {
+  text-align: center;
+}
+.text-white {
+  color: #fff;
+}
+.text-start {
+  text-align: left;
+}
+button.owl-dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #d6d6d6;
+  display: inline;
+  align-items: center;
+  border-radius: 30px;
+}
+.footer-container {
+  background: url(./image/bg-img5.jpeg);
+  background-size: cover;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  z-index: -1000;
+}
+
+.footer__section__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  clear: both;
+}
+.footer__item {
+  width: 300px;
+  display: flex;
+  color: white;
+  padding: 20px;
+}
+.footer__item1 {
+  width: 300px;
+  color: white;
+  padding: 20px;
+}
+.footer__item__info1 {
+  display: flex;
+  padding: 10px;
+  text-align: left;
+}
+.footer__item__info {
+  display: flex;
+  padding: 10px;
+  text-align: left;
+  width: 300px;
+}
+
+.footer__item__info h5 {
+  font-family: "Ghostphobia";
+  color: #fff;
+  font-size: 30px;
+}
+.footer__item__info p {
+  color: #fff;
+  font-family: "HappyHalloween";
+  font-size: 20px;
+  margin-top: 2rem;
+}
+.list-unstyled {
+  list-style: none;
+}
+.list-unstyled li {
+  margin-bottom: 12px;
+  font-family: "HappyHalloween";
+  color: #fff;
+}
+.fot-list {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.list-fot {
+  display: flex;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  justify-content: space-evenly;
+  color: white;
+  padding: 16px;
+}
+.fot-col {
+  display: flex;
+  width: 30%;
+}
+.fot-col1 {
+  display: flex;
+  width: 30%;
+  justify-content: flex-end;
+}
+.list-fot ul li {
+  padding: 10px 25px;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+  display: inline;
+  margin: 0 8px;
+  font-family: "HappyHalloween";
+  list-style: none;
+}
+.list-fot ul .active {
+  background: #ff5003;
+  color: #fff;
+}
